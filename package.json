@@ -1,0 +1,42 @@
+{
+  "name": "electron-nitro-cli",
+  "version": "1.0.0",
+  "description": "electron-nitro app generation cli experience",
+  "author": {
+    "name": "wanlitao",
+    "email": "wanlitao_3055601@outlook.com",
+    "url": "https://github.com/electron-nitro"
+  },
+  "license": "MIT",
+  "keywords": [
+    "electron",
+    "nitro"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./cli": "./bin/electron-nitro.mjs"
+  },
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "electron-nitro": "./bin/electron-nitro.mjs"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "citty": "^0.1.6",
+    "giget": "^1.2.3",
+    "pathe": "^1.1.2",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "pnpm@9.9.0",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

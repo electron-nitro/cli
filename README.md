@@ -1,3 +1,3 @@
-# electron-nitro-cli
+# electron-nitro cli
 
-electron-nitro app cli tools
+electron-nitro app generation cli experience.

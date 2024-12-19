@@ -4,12 +4,12 @@ import { resolve } from "pathe";
 import { downloadTemplate } from "giget";
 import type { DownloadTemplateResult } from "giget";
 
-import { sharedArgs } from "./_shared";
+import { cwdArgs } from "./_shared";
 
 const DEFAULT_TEMPLATE_NAME = "nitro-basic";
 
 const DEFAULT_REGISTRY =
-  "https://raw.githubusercontent.com/nuxt/starter/templates/templates";
+  "https://raw.githubusercontent.com/electron-nitro/starter/main/templates";
 
 export default defineCommand({
   meta: {
@@ -17,7 +17,7 @@ export default defineCommand({
     description: "Initialize a fresh project",
   },
   args: {
-    ...sharedArgs,
+    ...cwdArgs,
     dir: {
       type: "positional",
       description: "Project directory",
@@ -50,7 +50,7 @@ export default defineCommand({
         force: true,
         offline: false,
         preferOffline: true,
-        registry: process.env.ZTX_ELECTRON_INIT_REGISTRY || DEFAULT_REGISTRY,
+        registry: process.env.ELECTRON_INIT_REGISTRY || DEFAULT_REGISTRY,
       });
     } catch (err) {
       if (process.env.DEBUG) {

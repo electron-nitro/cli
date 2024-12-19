@@ -26,14 +26,18 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "unbuild",
+    "electron-nitro": "node ./bin/electron-nitro.mjs",
+    "prepack": "unbuild"
   },
   "devDependencies": {
     "@types/node": "^22.10.1",
     "citty": "^0.1.6",
+    "consola": "^3.2.3",
     "giget": "^1.2.3",
     "pathe": "^1.1.2",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "unbuild": "^3.0.1"
   },
   "packageManager": "pnpm@9.9.0",
   "engines": {

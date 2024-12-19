@@ -1,10 +1,10 @@
-export const sharedArgs = {
+import type { ArgDef } from "citty";
+
+export const cwdArgs = {
   cwd: {
     type: "string",
-    description: "Current working directory",
+    description: "Specify the working directory",
+    valueHint: "directory",
+    default: ".",
   },
-  logLevel: {
-    type: "string",
-    description: "Log level",
-  },
-} as const;
+} as const satisfies Record<string, ArgDef>;

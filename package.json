@@ -32,7 +32,9 @@
   "scripts": {
     "build": "unbuild",
     "electron-nitro": "node ./bin/electron-nitro.mjs",
-    "prepack": "unbuild"
+    "prepack": "unbuild",
+    "release": "changelogen --release --push",
+    "publish": "nrm use npm && npm login && npm publish"
   },
   "devDependencies": {
     "@types/node": "^22.10.1",

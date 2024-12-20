@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron-nitro/cli"
+    "url": "git+https://github.com/electron-nitro/cli.git"
   },
   "license": "MIT",
   "keywords": [

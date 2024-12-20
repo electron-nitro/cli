@@ -1,11 +1,15 @@
 {
   "name": "electron-nitro-cli",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "electron-nitro app generation cli experience",
   "author": {
     "name": "wanlitao",
     "email": "wanlitao_3055601@outlook.com",
     "url": "https://github.com/electron-nitro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/electron-nitro/cli"
   },
   "license": "MIT",
   "keywords": [
@@ -32,6 +36,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.10.1",
+    "changelogen": "^0.5.7",
     "citty": "^0.1.6",
     "consola": "^3.2.3",
     "giget": "^1.2.3",

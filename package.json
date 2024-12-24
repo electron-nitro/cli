@@ -34,7 +34,8 @@
     "electron-nitro": "node ./bin/electron-nitro.mjs",
     "prepack": "unbuild",
     "release": "changelogen --release --push",
-    "publish": "nrm use npm && npm login && npm publish"
+    "publish:npm": "nrm use npm && npm login && npm publish",
+    "publish:ztx": "nrm use ztx && npm login && npm publish"
   },
   "devDependencies": {
     "@types/node": "^22.10.1",

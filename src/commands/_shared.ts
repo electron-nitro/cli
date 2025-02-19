@@ -7,4 +7,4 @@ export const cwdArgs = {
     valueHint: "directory",
     default: ".",
   },
-} as const satisfies Record<string, ArgDef>;
+} satisfies Record<string, ArgDef>;

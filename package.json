@@ -32,17 +32,18 @@
   "scripts": {
     "build": "unbuild",
     "electron-nitro": "node ./bin/electron-nitro.mjs",
-    "prepack": "unbuild",
+    "prepack": "pnpm build",
     "release": "changelogen --release --push",
-    "publish:npm": "nrm use npm && npm login && npm publish",
-    "publish:ztx": "nrm use ztx && npm login && npm publish"
+    "publish:ztx": "nrm use ztx && pnpm login && pnpm publish"
   },
   "devDependencies": {
+    "@electron-nitro/core": "^0.0.1",
     "@types/node": "^22.10.1",
     "changelogen": "^0.5.7",
     "citty": "^0.1.6",
     "consola": "^3.2.3",
     "giget": "^1.2.3",
+    "listhen": "^1.9.0",
     "pathe": "^1.1.2",
     "typescript": "^5.7.2",
     "unbuild": "^3.0.1"

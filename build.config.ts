@@ -6,5 +6,5 @@ export default defineBuildConfig({
     inlineDependencies: true,
   },
   entries: ["src/index"],
-  externals: ["@electron-nitro/core"],
+  externals: ["@electron-nitro/core", "giget", "listhen"],
 });

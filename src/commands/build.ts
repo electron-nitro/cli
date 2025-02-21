@@ -1,5 +1,8 @@
 import { defineCommand } from "citty";
+import { resolve } from "pathe";
 import { createElectronNitro, build } from "@electron-nitro/core";
+
+import { cwdArgs } from "./_shared";
 
 export default defineCommand({
   meta: {
@@ -7,6 +10,7 @@ export default defineCommand({
     description: "Build electron-nitro project for production",
   },
   args: {
+    ...cwdArgs,
     preset: {
       type: "string",
       description:
@@ -14,15 +18,18 @@ export default defineCommand({
     },
   },
   async run(ctx) {
+    const rootDir = resolve(ctx.args.cwd || ".");
+
     const electronNitro = await createElectronNitro({
       dev: false,
+      rootDir,
       nitro: {
         preset: ctx.args.preset,
       },
     });
 
     await build(electronNitro);
-    
+
     await electronNitro.close();
   },
 });

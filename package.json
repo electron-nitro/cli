@@ -1,6 +1,6 @@
 {
   "name": "@electron-nitro/cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "electron-nitro app generation cli experience",
   "author": {
     "name": "wanlitao",

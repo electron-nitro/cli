@@ -1,3 +1,3 @@
 provider: generic
-url: http://example.com/electron-nitro-basic/release
-updaterCacheDirName: electron-nitro-basic-app-dev-updater
+url: http://example.com/electron-nitro-playground/release
+updaterCacheDirName: electron-nitro-playground-app-dev-updater

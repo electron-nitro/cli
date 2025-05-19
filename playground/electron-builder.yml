@@ -1,5 +1,5 @@
-appId: com.electron.nitro-basic
-productName: electron-nitro-basic
+appId: com.electron.nitro-playground
+productName: electron-nitro-playground-app
 copyright: Copyright © 2024 electron-nitro
 asar: false
 directories:
@@ -12,11 +12,11 @@ files:
       - dist
       - .env.production
 protocols:
-  name: electron-nitro-basic-app
-  schemes: [electron-nitro-basic]
+  name: electron-nitro-playground-app
+  schemes: [electron-nitro-playground]
 publish:
   provider: generic
-  url: http://example.com/electron-nitro-basic/release
+  url: http://example.com/electron-nitro-playground/release
 nsis:
   deleteAppDataOnUninstall: true
   include: build/installer/win/nsis-installer.nsh

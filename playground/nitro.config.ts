@@ -7,8 +7,8 @@ export default defineNitroConfig({
   openAPI: {
     production: "runtime",
     meta: {
-      title: "electron-nitro-basic",
-      description: "electron nitro basic backend api",
+      title: "electron-nitro-playground",
+      description: "electron nitro playground backend api",
       version: "1.0",
     },
   },
